@@ -1,4 +1,10 @@
-package paqAnimales;
+package es.cifpcarlosiii.ed1damdist.tarea4;
+
+/**
+ * Clase que representa a un perro, un mamífero específico.
+ * @author Alejandro Benedicto Morga
+ * @version 1.0
+ */
 
 public class Perro extends Mamifero {
 
@@ -17,11 +23,10 @@ public class Perro extends Mamifero {
 
     @Override
     void relacionar(Animal p) {
-        System.out.println("Con el perro: " + p.nombre);
+        System.out.println("Con el perro: " + p.ToString());
     }
 
-    String ToString() {
-        return this.nombre;
+    public Perro(String nombre) {
+        super(nombre);
     }
-
 }
